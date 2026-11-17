@@ -34,7 +34,7 @@ export const projects: Project[] = [
       ],
       verification: "verified",
     },
-    repoUrl: null,
+    repoUrl: "https://github.com/sendifrd/guyub-app-",
     featured: true,
     order: 2,
     sections: [
@@ -145,7 +145,6 @@ export const projects: Project[] = [
       "Your exact responsibilities as Project Manager",
       "Technology stack",
       "Team size and project timeline",
-      "Repository URL (if public)",
       "Screenshots and diagrams",
     ],
   },
