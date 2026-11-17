@@ -1,0 +1,26 @@
+"use client";
+
+import * as m from "motion/react-m";
+
+/** Subtle fade-up when an element scrolls into view (once). */
+export function Reveal({
+  children,
+  delay = 0,
+  className,
+}: {
+  children: React.ReactNode;
+  delay?: number;
+  className?: string;
+}) {
+  return (
+    <m.div
+      className={className}
+      initial={{ opacity: 0, y: 14 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.5, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
+    >
+      {children}
+    </m.div>
+  );
+}
