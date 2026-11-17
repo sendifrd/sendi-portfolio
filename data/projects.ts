@@ -34,7 +34,7 @@ export const projects: Project[] = [
       ],
       verification: "verified",
     },
-    repoUrl: "https://github.com/sendifrd/guyub-app-",
+    repoUrl: "https://github.com/sendifrd/guyub-app",
     featured: true,
     order: 2,
     sections: [
